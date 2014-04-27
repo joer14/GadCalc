@@ -13,6 +13,6 @@
     "commit": "7d1a6e977a8bd8194e84201dad6114840c5d4a20"
   },
   "_source": "git://github.com/angular/bower-angular-sanitize.git",
-  "_target": "~1.2.0",
+  "_target": "~1.2.6",
   "_originalSource": "angular-sanitize"
 }

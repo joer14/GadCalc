@@ -19,7 +19,7 @@
 </div> -->
 <div class="row marketing">
   <div class="col-lg-12">
-    <p>This application was commissioned by <a href="https://www.radiology.wisc.edu/people/facultyContent.php?vaultID=47">Howard Rowley, M.D.</a> and <a href="https://www.radiology.wisc.edu/people/facultyContent.php?vaultID=46">Scott Reeder, M.D., Ph.D.</a> at the University of Wisconsin, Madison and was built by <a href="http://joerowley.net">Joe Rowley</a> using Yeoman, Bootstrap, AngularJS and MathJax.</p>
+    <p>This application was commissioned by <a href="https://www.radiology.wisc.edu/people/facultyContent.php?vaultID=47">Howard Rowley, M.D.</a> and <a href="https://www.radiology.wisc.edu/people/facultyContent.php?vaultID=46">Scott Reeder, M.D., Ph.D.</a> at the University of Wisconsin, Madison and was built by <a href="http://joerowley.net">Joe Rowley</a> using Yeoman, Bootstrap, and AngularJS.</p>
     <strong>Assumptions:</strong> standard approved dose, normal renal function, and no contraindications
                       
   </div>
@@ -53,15 +53,22 @@
                   </table> 
     <h4>Equation</h4>
     <div class="row">
-      <span style="margin: 15px" mathjax-bind="formulaGeneric"></span> 
-      <div><br>
-      <span style="margin: 15px" mathjax-bind="formula"></span> 
-      </div>
+      <!-- <span style="margin: 15px;" mathjax-bind="formulaGeneric"></span>  -->
+      <!-- <div><br> -->
+      <!-- <span style="margin: 15px;" mathjax-bind="formula"></span>  -->
+      <!-- </div> -->
+      <div> (Patient Mass * User Adjusted Dose ) / Drug Formulation  = Volume. </div>
+      <div> Dimensional Analysis: (kg * mmol/kg)/(mmol/mL) = mL
+      <!-- {{pWeight}} <span ng-if="pUnitkg">kg</span> <span ng-if="!pUnitkg">lb * 0.453592 kg/lb</span> {{$scope.pUnitN}} * {{drugDoseUser}} mmol/kg )/ {{drugForm}} mmol/mL = {{dose}} mL <span class="glyphicon glyphicon-arrow-right"></span>  {{dose | number: fractionSize }} mL.
+
+                        (If the dose is &lt; 5 mL we round to the tenths place, otherwise the ones.) -->
+                        
+      
 
     </div>
                         
   </div>
   </div>
 </div>
-
+</div>
   <!-- <p>♥ from the Yeoman team</p> -->
